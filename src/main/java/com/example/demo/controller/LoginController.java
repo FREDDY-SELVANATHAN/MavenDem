@@ -31,7 +31,7 @@ public class LoginController {
                               @RequestParam String password,
                               @RequestParam(required = false) boolean remember,
                               RedirectAttributes redirectAttributes) {
-        System.out.println("Login for user: " + username);
+        System.out.println("Login for aswanth: " + username);
         User authenticatedUser = loginService.authenticateUser(username, password);
         
         if (authenticatedUser != null) {
